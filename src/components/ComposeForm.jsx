@@ -11,7 +11,7 @@ function ComposeForm({ onSubmit }) {
 
   // this is the handler for the onChange event of the textarea 
   const handleEditorValueChange = (e) => {
-    setEditorValue(e.target.value)
+    setEditorValue(e.target.value);
   }
 
   const handleSubmit = (e) => {
