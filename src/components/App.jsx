@@ -11,7 +11,7 @@ import initialTweets from '../tweets.json'
 const CURRENT_USER = 'TonyB'
 
 function App() {
-
+//stores the tweets in the state of the component
   const [tweets, setTweets] = useState(initialTweets)
 // handler for new tweets
   const handlePostTweet = (content) => {
@@ -24,7 +24,8 @@ function App() {
       retweets_count: 0,
       favorites_count: 0,
     }
-  
+  // This generates a new array, with the contents of the existing tweets array
+  // by appending the new tweet object
     setTweets([...tweets, newTweet])
   }
 

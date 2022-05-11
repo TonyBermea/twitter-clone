@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import Tweet from './Tweet.jsx'
 import './Timeline.css'
 
+// This component now receives as a prop the tweets collection
 function Timeline({ tweets }) {
   return (
     <ul className="timeline">
